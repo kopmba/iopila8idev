@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+-->
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.LoginController">
+  <children>
+    <AnchorPane id="anchorPane2" prefHeight="300.0" prefWidth="500.0" styleClass="top-segment" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" layoutX="36.0" layoutY="2.0" prefHeight="300.0" prefWidth="421.0" spacing="5.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="2.0">
+          <children>
+                  <Label prefHeight="31.0" prefWidth="164.0" text="WAZ AUTHENTICATOR" />
+            <AnchorPane id="AnchorPane" prefHeight="180.0" prefWidth="430.0">
+              <children>
+                <Label id="label1" layoutX="1.0" layoutY="110.0" text="Password" />
+                <PasswordField id="passwordField1" fx:id="currentPassword" layoutY="126.0" prefHeight="31.0" prefWidth="425.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Label id="label1" layoutY="166.0" text="Confirm Password" />
+                        <Label layoutX="26.0" layoutY="6.0" text="Modifier votre mot de passe secondaire pour votre session" />
+                        <PasswordField id="passwordField2" fx:id="password" layoutY="67.0" prefHeight="31.0" prefWidth="425.0" />
+                        <Label id="label1" layoutX="1.0" layoutY="51.0" text="Current Password" />
+              </children>
+            </AnchorPane>
+          <PasswordField id="passwordField3" fx:id="confirmPassword" prefHeight="31.0" prefWidth="401.0" />
+          
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <HBox id="hBox1" alignment="CENTER" prefHeight="25.0" prefWidth="418.0" AnchorPane.bottomAnchor="156.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0">
+      <children>
+        <Button fx:id="back" defaultButton="true" font="$x1" maxHeight="2.147483647E9" onAction="#back" prefHeight="50.0" prefWidth="205.0" text="Reset" HBox.hgrow="ALWAYS" />
+        <Button fx:id="edit" defaultButton="true" font="$x1" maxHeight="2.147483647E9" onAction="#processEditPassword" prefHeight="50.0" prefWidth="205.0" text="Save" HBox.hgrow="ALWAYS" />
+      </children>
+      <children>
+        <Label id="label2" fx:id="errorMessage" />
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+</AnchorPane>
