@@ -1,0 +1,117 @@
+//Build and convert by Qwen chat AI from D source code  
+const std = @import("std");
+
+// Vector.zig
+pub const Vector = struct {
+    data: []f32,
+    bias: f32,
+
+    pub fn init(data: []f32) Vector {
+        return Vector{
+            .data = data,
+            .bias = 0.0,
+        };
+    }
+
+    pub fn setBias(self: *Vector, bias: f32) void {
+        self.bias = bias;
+    }
+};
+
+// Minor.zig
+pub const Minor = struct {
+    minor: f32,
+    tensor: [][]f32,
+
+    pub fn init(minor: f32, tensor: [][]f32) Minor {
+        return Minor{
+            .minor = minor,
+            .tensor = tensor,
+        };
+    }
+
+    pub fn getMinor(self: *const Minor) f32 {
+        return self.minor;
+    }
+
+    pub fn getTensor(self: *const Minor) [][]f32 {
+        return self.tensor;
+    }
+
+    pub fn setMinor(self: *Minor, new_minor: f32) void {
+        self.minor = new_minor;
+    }
+};
+
+pub const Matrix = struct {
+    tensor: std.ArrayList([]f32),
+    vectors: std.ArrayList(Vector),
+
+    pub fn init(allocator: std.mem.Allocator) Matrix {
+        return Matrix{
+            .tensor = std.ArrayList([]f32).init(allocator),
+            .vectors = std.ArrayList(Vector).init(allocator),
+        };
+    }
+
+    pub fn deinit(self: *Matrix) void {
+        self.tensor.deinit();
+        self.vectors.deinit();
+    }
+
+    pub fn addRow(self: *Matrix, row: []f32) void {
+        self.tensor.append(row) catch unreachable;
+    }
+
+    pub fn getTensor(self: *const Matrix) [][]f32 {
+        return self.tensor.items;
+    }
+
+    // Calcul du déterminant
+    pub fn detMatrix(mat: [][]f32) f32 {
+        const len = mat.len;
+        if (len == 2) return det2x2(mat);
+        // Implémente ici ou appelle detMinors
+        @panic("Not implemented");
+    }
+
+    fn det2x2(mat: [][]f32) f32 {
+        return mat[0][0] * mat[1][1] - mat[0][1] * mat[1][0];
+    }
+
+    pub fn det(self: *Matrix, alloc: std.mem.Allocator) !f32 {
+        return detMatrix(self.tensor.items, alloc);
+    }
+};
+
+fn pop(allocator: std.mem.Allocator, arr: []f32) ![]f32 {
+    if (arr.len <= 1) return error.EmptyArray;
+    var popped = try allocator.alloc(f32, arr.len - 1);
+    for (popped, arr[1..]) |*item, val| {
+        item.* = val;
+    }
+    return popped;
+}
+
+fn generateBias(vec: []f32) f32 {
+    var sum: f32 = 0.0;
+    for (vec) |val| {
+        sum += val * val;
+    }
+    return std.math.sqrt(sum);
+}
+
+test "calcul déterminant 2x2" {
+    var gpa = std.heap.GeneralPurposeAllocator(.{}){};
+    defer _ = gpa.deinit();
+    const alloc = gpa.allocator();
+
+    var mat = Matrix.init(alloc);
+    defer mat.deinit();
+
+    mat.addRow(&[_]f32{1, 2});
+    mat.addRow(&[_]f32{3, 4});
+
+    const d = try mat.det(alloc);
+    try std.testing.expectEqual(@as(f32, -2.0), d);
+}
