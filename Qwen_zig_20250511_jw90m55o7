@@ -1,4 +1,4 @@
-//Build and convert by Qwen chat AI from D source error code https://drive.google.com/file/d/1xmo4_f5PhmokqnsTgfCe-219kv8_1Mrh/view?usp=sharing
+//Build and convert by Qwen chat AI
 const std = @import("std");
 
 // Vector.zig
