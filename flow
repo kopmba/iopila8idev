@@ -1,21 +1,3 @@
-const Server = struct {
-  host:[]u8,
-  port:i32,
-  
-  pub fn start(self:*Server) void {
-    
-  }
-  
-  pub fn stop(self*Server) void {
-    
-  }
-  
-  pub fn handle(self:*Server, channel:flowChannel) void {
-    ///recuperation des cles id du consumer via url
-  }
-  
-} 
-
 const Datagram = struct {
   id:i32,
   channel: Channel,
