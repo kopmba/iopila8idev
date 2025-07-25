@@ -1,0 +1,35 @@
+const Neuron = struct {
+  inputs:[]f32,
+  bias:f32,
+  weight:f32,
+  value:f32,
+  error:f32,
+  t:f32,
+
+  pub fn computeUnit(self:*Neuron) Neuron {
+    return self.inputs[0]*self.weight + self.bias;
+  }
+
+  pub fn compute(self:*Neuron) {
+    var sum:f32 = 0.0;
+    var i=0;
+    while(i<self.inputs.len):(i+=1) {
+      sum = sum + self.inputs[i]*self.weight;
+    }
+    self.value = sum + self.bias;
+  }
+
+  pub fn activate(self:*Neuron, fit:[]const u8) f32 {
+    var result:f32 = 0.0;
+    if(mem.eq(u8, fit, "sigmoid")) {
+      result = result + activation.sigmoid(self.value);
+    } else if(mem.eq(u8, fit, "tan")) {
+      result = result + activation.tanh(self.value);
+    } else if(mem.eq(u8, fit, "softmax")) {
+    activation.softmax(self.value, self.t);
+    } else {
+      result = result + activation.relu(self.value);
+    }
+    return result;
+  }
+}
