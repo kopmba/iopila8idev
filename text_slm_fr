@@ -1,0 +1,2818 @@
+[
+  {
+    "all" : [
+      {
+        "id" : "le",
+        "type" : "article defini",
+        "mode" : "sing.",
+        "person" : "masc."
+      },
+      {
+        "id" : "la",
+        "type" : "article defini",
+        "mode" : "sing.",
+        "person" : "fem."
+      },
+      {
+        "id" : "les",
+        "type" : "article defini",
+        "mode" : "plur.",
+        "person" : "neut."
+      },
+      {
+        "id" : "un",
+        "type" : "article indefini",
+        "mode" : "sing.",
+        "person" : "masc."
+      },
+      {
+        "id" : "une",
+        "type" : "article indefini",
+        "mode" : "sing.",
+        "person" : "fem."
+      },
+      {
+        "id" : "des",
+        "type" : "article indefini",
+        "mode" : "plur.",
+        "person" : "neut."
+      },
+      {
+        "id" : "du",
+        "type" : "article partitif",
+        "mode" : "sing.",
+        "person" : "masc."
+      },
+      {
+        "id" : "de la",
+        "type" : "article partitif",
+        "mode" : "sing..",
+        "person" : "fem."
+      },
+      {
+        "id" : "mon",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "ma",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "notre",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "mes",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 1
+      },
+      {
+        "id" : "nos",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 1
+      },
+      {
+        "id" : "ton",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "ta",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "votre",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "tes",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 2
+      },
+      {
+        "id" : "vos",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 2
+      },
+      {
+        "id" : "son",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "sa",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "leur",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "ses",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "leurs",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "ce",
+        "type" : "demonstrative",
+        "mode" : "sing.",
+        "person" : "masc."
+      },
+      {
+        "id" : "cet",
+        "type" : "demonstrative",
+        "mode" : "sing.",
+        "person" : "masc."
+      },
+      {
+        "id" : "cete",
+        "type" : "demonstrative",
+        "mode" : "sing.",
+        "person" : "fem."
+      },
+      {
+        "id" : "ces",
+        "type" : "demonstrative",
+        "mode" : "plur.",
+        "person" : "neut."
+      },
+      {
+        "id" : "quel",
+        "type" : "interrogative",
+        "mode" : "sing.",
+        "person" : "masc."
+      },
+      {
+        "id" : "quelle",
+        "type" : "interrogative",
+        "mode" : "sing.",
+        "person" : "fem."
+      },
+      {
+        "id" : "quels",
+        "type" : "interrogative",
+        "mode" : "plur.",
+        "person" : "masc."
+      },
+      {
+        "id" : "quelles",
+        "type" : "interrogative",
+        "mode" : "plur.",
+        "person" : "fem."
+      },
+      {
+        "id" : "aucun",
+        "type" : "indefinite",
+        "mode" : "sing.",
+        "person" : false
+      },
+      {
+        "id" : "aucune",
+        "type" : "indefinite",
+        "mode" : "sing.",
+        "person" : false
+      },
+      {
+        "id" : "chaque",
+        "type" : "indefinite",
+        "mode" : "sing.",
+        "person" : true
+      },
+      {
+        "id" : "quelque",
+        "type" : "indefinite",
+        "mode" : "sing.",
+        "person" : true
+      },
+      {
+        "id" : "différents",
+        "type" : "indefinite",
+        "mode" : "plur.",
+        "person" : true
+      },
+      {
+        "id" : "differentes",
+        "type" : "indefinite",
+        "mode" : "plur.",
+        "person" : true
+      },
+      {
+        "id" : "divers",
+        "type" : "indefinite",
+        "mode" : "plur.",
+        "person" : true
+      },
+      {
+        "id" : "diverses",
+        "type" : "indefinite",
+        "mode" : "plur.",
+        "person" : true
+      },
+      {
+        "id" : "quelques",
+        "type" : "indefinite",
+        "mode" : "plur.",
+        "person" : true
+      }
+    ],
+    "table_name" : "Determinant"
+  },
+  {
+    "all" : [
+      {
+        "id" : "je",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "me",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "moi",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "nous",
+        "type" : "personal",
+        "mode" : "plur.",
+        "person" : 1
+      },
+      {
+        "id" : "tu",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "te",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "toi",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "vous",
+        "type" : "personal",
+        "mode" : "plur.",
+        "person" : 2
+      },
+      {
+        "id" : "il",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "elle",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "le",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "la",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "se",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "soi",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "lui",
+        "type" : "personal",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "ils",
+        "type" : "personal",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "elles",
+        "type" : "personal",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "les",
+        "type" : "personal",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "se",
+        "type" : "personal",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "soi",
+        "type" : "personal",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "leur",
+        "type" : "personal",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "eux",
+        "type" : "personal",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "le mien",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "la mienne",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "le nôtre",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "la nôtre",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 1
+      },
+      {
+        "id" : "les miens",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 1
+      },
+      {
+        "id" : "les miennes",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 1
+      },
+      {
+        "id" : "les nôtres",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 1
+      },
+      {
+        "id" : "le tien",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "la tienne",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "le vôtre",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "la vôtre",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 2
+      },
+      {
+        "id" : "les tiens",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 2
+      },
+      {
+        "id" : "les tiennes",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 2
+      },
+      {
+        "id" : "les vôtres",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 2
+      },
+      {
+        "id" : "le sien",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "la sienne",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "le leur",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "la leur",
+        "type" : "possessive",
+        "mode" : "sing.",
+        "person" : 3
+      },
+      {
+        "id" : "les siens",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "les siennes",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "id" : "les leurs",
+        "type" : "possessive",
+        "mode" : "plur.",
+        "person" : 3
+      },
+      {
+        "gender" : "masc.",
+        "id" : "celui",
+        "type" : "demonstrative",
+        "mode" : "sing."
+      },
+      {
+        "id" : "celle",
+        "type" : "demonstrative",
+        "mode" : "sing.",
+        "person" : "fem."
+      },
+      {
+        "id" : "ce",
+        "type" : "demonstrative",
+        "mode" : "sing.",
+        "person" : "neut."
+      },
+      {
+        "id" : "cela",
+        "type" : "demonstrative",
+        "mode" : "sing.",
+        "person" : "neut."
+      },
+      {
+        "id" : "ça",
+        "type" : "demonstrative",
+        "mode" : "sing.",
+        "person" : "neut."
+      },
+      {
+        "id" : "ceux",
+        "type" : "demonstrative",
+        "mode" : "plur.",
+        "person" : "masc."
+      },
+      {
+        "id" : "celles",
+        "type" : "demonstrative",
+        "mode" : "plur.",
+        "person" : "fem."
+      },
+      {
+        "component" : "subject",
+        "id" : "qui",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "cod",
+        "id" : "que",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "coi",
+        "id" : "quoi",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "complement",
+        "id" : "dont",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "complement de lieu",
+        "id" : "où",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "subject",
+        "id" : "qui",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "cod",
+        "id" : "que",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "coi",
+        "id" : "quoi",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "complement",
+        "id" : "dont",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "complement de lieu",
+        "id" : "où",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "subject",
+        "id" : "qui",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "cod",
+        "id" : "que",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "coi",
+        "id" : "quoi",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "complement",
+        "id" : "dont",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "complement de lieu",
+        "id" : "où",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "subject",
+        "id" : "qui",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "cod",
+        "id" : "que",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "coi",
+        "id" : "à quoi",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "coi",
+        "id" : "de quoi",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "coi",
+        "id" : "pour quoi",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "coi",
+        "id" : "vers quoi",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "complement",
+        "id" : "dont",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "component" : "complement de lieu",
+        "id" : "où",
+        "form" : "simple",
+        "type" : "relative"
+      },
+      {
+        "id" : "lequel",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "laquelle",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "lesquels",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "lesquelles",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "auquel",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "à laquelle",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "auxquels",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "auxquelles",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "duquel",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "de laquelle",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "desquels",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "id" : "desquelles",
+        "type" : "relative",
+        "form" : "composed"
+      },
+      {
+        "component" : "subject",
+        "id" : "qui",
+        "type" : "interrogative",
+        "person" : true
+      },
+      {
+        "component" : "subject",
+        "id" : "est-ce qui",
+        "type" : "interrogative",
+        "person" : true
+      },
+      {
+        "component" : "subject",
+        "id" : "qu’est-ce qui",
+        "type" : "interrogative",
+        "person" : false
+      },
+      {
+        "component" : "cod",
+        "id" : "qui",
+        "type" : "interrogative",
+        "person" : true
+      },
+      {
+        "component" : "cod",
+        "id" : "est-ce que",
+        "type" : "interrogative",
+        "person" : true
+      },
+      {
+        "component" : "cod",
+        "id" : "que",
+        "type" : "interrogative",
+        "person" : false
+      },
+      {
+        "component" : "cod",
+        "id" : "quoi",
+        "type" : "interrogative",
+        "person" : false
+      },
+      {
+        "component" : "cod",
+        "id" : "qu’est-ce que",
+        "type" : "interrogative",
+        "person" : false
+      },
+      {
+        "component" : "coi",
+        "id" : "à qui",
+        "type" : "interrogative",
+        "person" : true
+      },
+      {
+        "component" : "coi",
+        "id" : "de qui",
+        "type" : "interrogative",
+        "person" : true
+      },
+      {
+        "component" : "coi",
+        "id" : "pour qui",
+        "type" : "interrogative",
+        "person" : true
+      },
+      {
+        "component" : "coi",
+        "id" : "vers qui",
+        "type" : "interrogative",
+        "person" : true
+      },
+      {
+        "component" : "coi",
+        "id" : "à quoi",
+        "type" : "interrogative",
+        "person" : false
+      },
+      {
+        "component" : "coi",
+        "id" : "de quoi",
+        "type" : "interrogative",
+        "person" : false
+      },
+      {
+        "component" : "coi",
+        "id" : "pour quoi",
+        "type" : "interrogative",
+        "person" : false
+      },
+      {
+        "component" : "coi",
+        "id" : "vers quoi",
+        "type" : "interrogative",
+        "person" : false
+      },
+      {
+        "id" : "nul",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "tel",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "telle",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "autrui",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "on",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "personne",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "quelqu’un",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "quelqu’une",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "quiconque",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "tout le monde",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "tout",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "rien",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "autre chose",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "grand-chose",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "quelque chose",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "peu de chose",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "bon nombre",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "aucun",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "aucune",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "chacun",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "chacune",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "certains",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "certaines",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "plusieurs",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "quelques-uns",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "quelques-unes",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "tous",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "toutes",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "la plupart",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "bon nombre",
+        "type" : "indefinite",
+        "person" : true
+      },
+      {
+        "id" : "je ne sais qui",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "je ne sais quoi",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "n’importe qui",
+        "type" : "indefinite",
+        "person" : false
+      },
+      {
+        "id" : "n’importe quoi",
+        "type" : "indefinite",
+        "person" : false
+      }
+    ],
+    "table_name" : "Pronoun"
+  },
+  {
+    "all" : [
+      "à",
+      "après",
+      "avant",
+      "avec",
+      "chez",
+      "concernant",
+      "contre",
+      "dans",
+      "de",
+      "depuis",
+      "derrière",
+      "dès",
+      "jusque",
+      "devant",
+      "hormis",
+      "hors",
+      "malgré",
+      "moyennant",
+      "nonobstant",
+      "outre",
+      "par",
+      "parmi",
+      "pendant",
+      "sans",
+      "sauf",
+      "selon",
+      "sous",
+      "suivant",
+      "sur",
+      "touchant",
+      "vers",
+      "via"
+    ],
+    "table_name" : "Preposition"
+  },
+  {
+    "all" : [
+      "mais",
+      "ou",
+      "et",
+      "donc",
+      "or",
+      "ni",
+      "car"
+    ],
+    "table_name" : "Conjonction"
+  },
+  {
+    "all" : [
+      {
+        "id" : "quand",
+        "type" : "temps"
+      }
+    ],
+    "table_name" : "Adverb"
+  },
+  {
+    "all" : [
+      {
+        "id" : [
+          "toucher"
+        ],
+        "action" : true,
+        "group" : 1
+      },
+      {
+        "id" : [
+          "finir"
+        ],
+        "action" : true,
+        "group" : 2
+      },
+      {
+        "id" : [
+          "aller"
+        ],
+        "action" : true,
+        "group" : 3
+      },
+      {
+        "id" : [
+          "venir"
+        ],
+        "action" : true,
+        "group" : 3
+      },
+      {
+        "id" : [
+          "lire"
+        ],
+        "action" : true,
+        "group" : 3
+      },
+      {
+        "id" : [
+          "savoir"
+        ],
+        "action" : true,
+        "group" : 3
+      }
+    ],
+    "form_group" : {
+      "1" : {
+        "ctx" : {
+          "ler" : {
+            "conditionnal" : [
+              "llerais",
+              "llerais",
+              "llerait",
+              "llerions",
+              "lleriez",
+              "lleraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "llerai",
+                "lleras",
+                "llera",
+                "llerons",
+                "llerez",
+                "lleront"
+              ],
+              "present" : [
+                "lle",
+                "lles",
+                "lle",
+                "lons",
+                "lez",
+                "llent"
+              ],
+              "past_simple" : [
+                "ai",
+                "as",
+                "a",
+                "âmes",
+                "âtes",
+                "èrent"
+              ],
+              "perfect" : [
+                "ais",
+                "ais",
+                "ait",
+                "ions",
+                "iez",
+                "aient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "lle",
+              "",
+              "lons",
+              "lez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "é"
+            },
+            "subjonctive" : {
+              "present" : [
+                "lle",
+                "lles",
+                "lle",
+                "lions",
+                "liez",
+                "llent"
+              ],
+              "perfect" : [
+                "asse",
+                "asses",
+                "ât",
+                "assions",
+                "assiez",
+                "assent"
+              ]
+            }
+          },
+          "er" : {
+            "conditionnal" : [
+              "erais",
+              "erais",
+              "erait",
+              "erions",
+              "eriez",
+              "eraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "erai",
+                "eras",
+                "era",
+                "erons",
+                "erez",
+                "eront"
+              ],
+              "present" : [
+                "e",
+                "es",
+                "e",
+                "ons",
+                "ez",
+                "ent"
+              ],
+              "past_simple" : [
+                "ai",
+                "as",
+                "a",
+                "âmes",
+                "âtes",
+                "èrent"
+              ],
+              "perfect" : [
+                "ais",
+                "ais",
+                "ait",
+                "ions",
+                "iez",
+                "aient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "e",
+              "",
+              "ons",
+              "ez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "é"
+            },
+            "subjonctive" : {
+              "present" : [
+                "e",
+                "es",
+                "e",
+                "ions",
+                "iez",
+                "ent"
+              ],
+              "perfect" : [
+                "asse",
+                "asses",
+                "ât",
+                "assions",
+                "assiez",
+                "assent"
+              ]
+            }
+          },
+          "oyer" : {
+            "conditionnal" : [
+              "errais",
+              "errais",
+              "errait",
+              "errions",
+              "erriez",
+              "erraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "errai",
+                "erras",
+                "erra",
+                "errons",
+                "errez",
+                "erront"
+              ],
+              "present" : [
+                "oie",
+                "oies",
+                "oie",
+                "oyons",
+                "oyez",
+                "oient"
+              ],
+              "past_simple" : [
+                "oyai",
+                "oyas",
+                "oya",
+                "oyâmes",
+                "oyâtes",
+                "oyèrent"
+              ],
+              "perfect" : [
+                "oyais",
+                "oyais",
+                "oyait",
+                "oyions",
+                "oyiez",
+                "oyaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "e",
+              "",
+              "oyons",
+              "oyez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "é"
+            },
+            "subjonctive" : {
+              "present" : [
+                "oie",
+                "oies",
+                "oie",
+                "oyions",
+                "oyiez",
+                "oient"
+              ],
+              "perfect" : [
+                "oyasse",
+                "oyasses",
+                "oyât",
+                "oyassions",
+                "oyassiez",
+                "oyassent"
+              ]
+            }
+          },
+          "uyer" : {
+            "conditionnal" : [
+              "uierais",
+              "uierais",
+              "uierait",
+              "uierions",
+              "uieriez",
+              "uieraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "uierai",
+                "uieras",
+                "uiera",
+                "uierons",
+                "uierez",
+                "uieront"
+              ],
+              "present" : [
+                "uie",
+                "uies",
+                "uie",
+                "uyons",
+                "uyez",
+                "uient"
+              ],
+              "past_simple" : [
+                "uyai",
+                "uyas",
+                "uya",
+                "uyâmes",
+                "uyâtes",
+                "uyèrent"
+              ],
+              "perfect" : [
+                "uyais",
+                "uyais",
+                "uyait",
+                "uyions",
+                "uyiez",
+                "uyaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "uie",
+              "",
+              "uyons",
+              "uyez",
+              ""
+            ],
+            "participle" : {
+              "present" : "uyant",
+              "past" : "é"
+            },
+            "subjonctive" : {
+              "present" : [
+                "uie",
+                "uies",
+                "uie",
+                "uyions",
+                "uyiez",
+                "uient"
+              ],
+              "perfect" : [
+                "uyasse",
+                "uyasses",
+                "uyât",
+                "uyassions",
+                "uyassiez",
+                "uyassent"
+              ]
+            }
+          },
+          "ayer" : {
+            "conditionnal" : [
+              "ayerais",
+              "ayerais",
+              "ayerait",
+              "ayerions",
+              "ayeriez",
+              "ayeraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "ayerai|aierai",
+                "ayeras|aieras",
+                "ayera|aiera",
+                "ayerons|aierons",
+                "ayerez|aierez",
+                "ayeront|aieront"
+              ],
+              "present" : [
+                "aye|aie",
+                "ayes|aies",
+                "aye|aie",
+                "ayons",
+                "ayez",
+                "ayent|aient"
+              ],
+              "past_simple" : [
+                "ayai",
+                "ayas",
+                "aya",
+                "ayâmes",
+                "ayâtes",
+                "ayèrent"
+              ],
+              "perfect" : [
+                "ayais",
+                "ayais",
+                "ayait",
+                "ayions",
+                "ayiez",
+                "ayaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "aye|aie",
+              "",
+              "ayons",
+              "ayez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ayant",
+              "past" : "é"
+            },
+            "subjonctive" : {
+              "present" : [
+                "aye|aie",
+                "ayes|aies",
+                "aye|aie",
+                "ayions",
+                "ayiez",
+                "ayent|aient"
+              ],
+              "perfect" : [
+                "ayasse",
+                "ayasses",
+                "ayât",
+                "ayassions",
+                "ayassiez",
+                "ayassent"
+              ]
+            }
+          },
+          "ger" : {
+            "conditionnal" : [
+              "erais",
+              "erais",
+              "erait",
+              "erions",
+              "eriez",
+              "eraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "erai",
+                "eras",
+                "era",
+                "erons",
+                "erez",
+                "eront"
+              ],
+              "present" : [
+                "e",
+                "es",
+                "e",
+                "ons",
+                "ez",
+                "ent"
+              ],
+              "past_simple" : [
+                "eai",
+                "eas",
+                "ea",
+                "eâmes",
+                "eâtes",
+                "èrent"
+              ],
+              "perfect" : [
+                "eais",
+                "eais",
+                "eait",
+                "ions",
+                "iez",
+                "eaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "e",
+              "",
+              "ons",
+              "ez",
+              ""
+            ],
+            "participle" : {
+              "present" : "eant",
+              "past" : "é"
+            },
+            "subjonctive" : {
+              "present" : [
+                "e",
+                "es",
+                "e",
+                "ions",
+                "iez",
+                "ent"
+              ],
+              "perfect" : [
+                "asse",
+                "asses",
+                "ât",
+                "assions",
+                "assiez",
+                "assent"
+              ]
+            }
+          },
+          "ter" : {
+            "conditionnal" : [
+              "tterais",
+              "tterais",
+              "tterait",
+              "tterions",
+              "tteriez",
+              "tteraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "tterai",
+                "tteras",
+                "ttera",
+                "tterons",
+                "tterez",
+                "tteront"
+              ],
+              "present" : [
+                "tte",
+                "ttes",
+                "tte",
+                "tons",
+                "tez",
+                "ttent"
+              ],
+              "past_simple" : [
+                "ai",
+                "as",
+                "a",
+                "âmes",
+                "âtes",
+                "èrent"
+              ],
+              "perfect" : [
+                "ais",
+                "ais",
+                "ait",
+                "ions",
+                "iez",
+                "aient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "tte",
+              "",
+              "tons",
+              "tez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "é"
+            },
+            "subjonctive" : {
+              "present" : [
+                "tte",
+                "ttes",
+                "tte",
+                "ions",
+                "iez",
+                "ttent"
+              ],
+              "perfect" : [
+                "asse",
+                "asses",
+                "ât",
+                "assions",
+                "assiez",
+                "assent"
+              ]
+            }
+          }
+        }
+      },
+      "2" : {
+        "ctx" : {
+          "ir" : {
+            "conditionnal" : [
+              "irais",
+              "irais",
+              "irait",
+              "irions",
+              "iriez",
+              "iraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "irai",
+                "iras",
+                "ira",
+                "irons",
+                "irez",
+                "iront"
+              ],
+              "present" : [
+                "is",
+                "is",
+                "it",
+                "issons",
+                "issez",
+                "issent"
+              ],
+              "past_simple" : [
+                "is",
+                "is",
+                "it",
+                "imes",
+                "ites",
+                "irent"
+              ],
+              "perfect" : [
+                "issais",
+                "issais",
+                "issait",
+                "issions",
+                "issiez",
+                "issaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "is",
+              "",
+              "issons",
+              "issez",
+              ""
+            ],
+            "participle" : {
+              "present" : "issant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ],
+              "perfect" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ]
+            }
+          }
+        }
+      },
+      "3" : {
+        "ctx" : {
+          "erir" : {
+            "conditionnal" : [
+              "errais",
+              "errais",
+              "errait",
+              "errions",
+              "erroez",
+              "erraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "errai",
+                "erras",
+                "erra",
+                "errons",
+                "errez",
+                "erront"
+              ],
+              "present" : [
+                "iers",
+                "iers",
+                "iert",
+                "erons",
+                "erez",
+                "ierent"
+              ],
+              "past_simple" : [
+                "is",
+                "is",
+                "it",
+                "imes",
+                "ites",
+                "irent"
+              ],
+              "perfect" : [
+                "erais",
+                "erais",
+                "erait",
+                "erions",
+                "eriez",
+                "eraient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "iers",
+              "",
+              "erons",
+              "erez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "iere",
+                "ieres",
+                "iere",
+                "erions",
+                "eriez",
+                "ierent"
+              ],
+              "perfect" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ]
+            }
+          },
+          "oir" : {
+            "conditionnal" : [
+              "oirais",
+              "oirais",
+              "oirait",
+              "oirions",
+              "oiriez",
+              "oiraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "oirai",
+                "oiras",
+                "oira",
+                "oirons",
+                "oirez",
+                "oiront"
+              ],
+              "present" : [
+                "ois",
+                "ois",
+                "oit",
+                "oyons",
+                "oyez",
+                "oient"
+              ],
+              "past_simple" : [
+                "us",
+                "us",
+                "ut",
+                "ûmes",
+                "ûtes",
+                "urent"
+              ],
+              "perfect" : [
+                "oyais",
+                "oyais",
+                "oyait",
+                "oyions",
+                "oyiez",
+                "oyaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "ois",
+              "",
+              "oyons",
+              "oyez",
+              ""
+            ],
+            "participle" : {
+              "present" : "oyant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "oie",
+                "oies",
+                "oie",
+                "oyions",
+                "oyiez",
+                "oient"
+              ],
+              "perfect" : [
+                "usse",
+                "usses",
+                "usse",
+                "ussions",
+                "ussiez",
+                "ussent"
+              ]
+            }
+          },
+          "*re" : {
+            "conditionnal" : [
+              "irais",
+              "irais",
+              "irait",
+              "irions",
+              "iriez",
+              "iraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "irai",
+                "iras",
+                "ira",
+                "irons",
+                "irez",
+                "iront"
+              ],
+              "present" : [
+                "s",
+                "s",
+                "t",
+                "ons|gnons|sons|yons|tons|vons|quons",
+                "ez|gnez|sez|yez|tez|vez|quez",
+                "ent|gnent|sent|ient|tent|vent|quent"
+              ],
+              "past_simple" : [
+                "is",
+                "is",
+                "it",
+                "imes",
+                "ites",
+                "irent"
+              ],
+              "perfect" : [
+                "issais",
+                "issais",
+                "issait",
+                "issions",
+                "issiez",
+                "issaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "is",
+              "",
+              "issons",
+              "issez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : ""
+            },
+            "subjonctive" : {
+              "present" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ],
+              "perfect" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ]
+            }
+          },
+          "vouloir" : {
+            "conditionnal" : [
+              "oudrais",
+              "oudrais",
+              "oudrait",
+              "oudrions",
+              "oudriez",
+              "oudraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "oudrai",
+                "oudras",
+                "oudra",
+                "oudrons",
+                "oudrez",
+                "oudront"
+              ],
+              "present" : [
+                "eux",
+                "eux",
+                "eut",
+                "oulons",
+                "oulez",
+                "eulent"
+              ],
+              "past_simple" : [
+                "us",
+                "us",
+                "ut",
+                "ûmes",
+                "ûtes",
+                "urent"
+              ],
+              "perfect" : [
+                "ais",
+                "ais",
+                "ait",
+                "ions",
+                "iez",
+                "aient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "eux|euille",
+              "",
+              "voulons",
+              "oulez|euillez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "u"
+            },
+            "subjonctive" : {
+              "present" : [
+                "euille",
+                "euilles",
+                "euille",
+                "oulions",
+                "ouliez",
+                "euillent"
+              ],
+              "perfect" : [
+                "oulusse",
+                "oulusses",
+                "oulût",
+                "oulussions",
+                "oulussiez",
+                "oulussent"
+              ]
+            }
+          },
+          "lir" : {
+            "conditionnal" : [
+              "erais|irais",
+              "erais|irais",
+              "erait|irait",
+              "erions|irions",
+              "eriez|iriez",
+              "eraient|iraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "erai|irai",
+                "eras|iras",
+                "era|ira",
+                "erons|irons",
+                "erez|irez",
+                "eront|iront"
+              ],
+              "present" : [
+                "e",
+                "es",
+                "e",
+                "ons",
+                "ez",
+                "ent"
+              ],
+              "past_simple" : [
+                "is",
+                "is",
+                "it",
+                "imes",
+                "ites",
+                "irent"
+              ],
+              "perfect" : [
+                "ais",
+                "ais",
+                "ait",
+                "ions",
+                "iez",
+                "aient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "e",
+              "",
+              "ons",
+              "ez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "e",
+                "es",
+                "e",
+                "ions",
+                "iez",
+                "ent"
+              ],
+              "perfect" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ]
+            }
+          },
+          "ourir" : {
+            "conditionnal" : [
+              "ourrais",
+              "ourrais",
+              "ourrait",
+              "ourrions",
+              "ourriez",
+              "ourraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "ourrai",
+                "ourras",
+                "ourra",
+                "ourrons",
+                "ourrez",
+                "ourront"
+              ],
+              "present" : [
+                "ours|eurs",
+                "ours|eurs",
+                "ourt|eurt",
+                "ourons",
+                "ourez",
+                "ourent"
+              ],
+              "past_simple" : [
+                "us",
+                "us",
+                "ut",
+                "ûmes",
+                "ûtes",
+                "urent"
+              ],
+              "perfect" : [
+                "ourais",
+                "ourais",
+                "ourait",
+                "ourions",
+                "ouriez",
+                "ouraient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "ours|eurs",
+              "",
+              "ourons",
+              "ourez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "oure|eure",
+                "oures|eures",
+                "oure|eure",
+                "ourions",
+                "ouriez",
+                "ourent|eurent"
+              ],
+              "perfect" : [
+                "usse",
+                "usses",
+                "ût",
+                "ussions",
+                "ussiez",
+                "ussent"
+              ]
+            }
+          },
+          "ouillir" : {
+            "conditionnal" : [
+              "irais",
+              "irais",
+              "irait",
+              "irions",
+              "iriez",
+              "iraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "irai",
+                "iras",
+                "ira",
+                "irons",
+                "irez",
+                "iront"
+              ],
+              "present" : [
+                "ous",
+                "ous",
+                "out",
+                "ouillons",
+                "ouillez",
+                "ouillent"
+              ],
+              "past_simple" : [
+                "is",
+                "is",
+                "it",
+                "imes",
+                "ites",
+                "irent"
+              ],
+              "perfect" : [
+                "ais",
+                "ais",
+                "ait",
+                "ions",
+                "iez",
+                "aient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "ous",
+              "",
+              "ouillons",
+              "ouillez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "e",
+                "es",
+                "e",
+                "ions",
+                "iez",
+                "ent"
+              ],
+              "perfect" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ]
+            }
+          },
+          "ouvoir" : {
+            "conditionnal" : [
+              "ouvrais",
+              "ouvrais",
+              "ouvrait",
+              "ouvrions",
+              "ouvriez",
+              "ouvraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "ouvrai",
+                "ouvras",
+                "ouvra",
+                "ouvrons",
+                "ouvrez",
+                "ouvront"
+              ],
+              "present" : [
+                "eus",
+                "eus",
+                "eut",
+                "ouvons",
+                "ouvez",
+                "euvent"
+              ],
+              "past_simple" : [
+                "us",
+                "us",
+                "ut",
+                "ûmes",
+                "ûtes",
+                "urent"
+              ],
+              "perfect" : [
+                "ouvais",
+                "ouvais",
+                "ouvait",
+                "ouvions",
+                "ouviez",
+                "ouvaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "eus",
+              "",
+              "ouvons",
+              "ouvez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "euve",
+                "euves",
+                "euve",
+                "ouvions",
+                "ouviez",
+                "euvent"
+              ],
+              "perfect" : [
+                "usse",
+                "usses",
+                "umût",
+                "ussions",
+                "ussiez",
+                "ussent"
+              ]
+            }
+          },
+          "savoir" : {
+            "conditionnal" : [
+              "aurais",
+              "aurais",
+              "aurait",
+              "aurions",
+              "auriez",
+              "auraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "aurai",
+                "auras",
+                "aura",
+                "aurons",
+                "aurez",
+                "auront"
+              ],
+              "present" : [
+                "ais",
+                "ais",
+                "ait",
+                "avons",
+                "avez",
+                "avent"
+              ],
+              "past_simple" : [
+                "us",
+                "us",
+                "ut",
+                "ûmes",
+                "ûtes",
+                "uremt"
+              ],
+              "perfect" : [
+                "avais",
+                "avais",
+                "avait",
+                "avions",
+                "aviez",
+                "avaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "sache",
+              "",
+              "sachons",
+              "sachez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "ache",
+                "aches",
+                "sache",
+                "sachions",
+                "sachiez",
+                "sachent"
+              ],
+              "perfect" : [
+                "susse",
+                "susses",
+                "susse",
+                "sussions",
+                "sussiez",
+                "sussent"
+              ]
+            }
+          },
+          "pouvoir" : {
+            "conditionnal" : [
+              "ourrais",
+              "ourrais",
+              "ourrait",
+              "ourions",
+              "ouriez",
+              "ouraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "ourrai",
+                "ourras",
+                "ourra",
+                "ourrons",
+                "ourrez",
+                "ourront"
+              ],
+              "present" : [
+                "eux",
+                "eux",
+                "eur",
+                "ouvons",
+                "ouvez",
+                "euvent"
+              ],
+              "past_simple" : [
+                "us",
+                "us",
+                "ut",
+                "ûmes",
+                "ûtes",
+                "uremt"
+              ],
+              "perfect" : [
+                "ais",
+                "ais",
+                "ait",
+                "ions",
+                "iez",
+                "aient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "uisse",
+                "uisses",
+                "uisse",
+                "uissions",
+                "uissiez",
+                "uissent"
+              ],
+              "perfect" : [
+                "usse",
+                "usses",
+                "ût",
+                "ussions",
+                "ussiez",
+                "ussent"
+              ]
+            }
+          },
+          "uir" : {
+            "conditionnal" : [
+              "irais",
+              "irais",
+              "irait",
+              "irions",
+              "iriez",
+              "iraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "irai",
+                "iras",
+                "ira",
+                "irons",
+                "irez",
+                "iront"
+              ],
+              "present" : [
+                "is",
+                "is",
+                "it",
+                "uyons",
+                "uyez",
+                "ient"
+              ],
+              "past_simple" : [
+                "is",
+                "is",
+                "it",
+                "imes",
+                "ites",
+                "irent"
+              ],
+              "perfect" : [
+                "uyais",
+                "utais",
+                "uyait",
+                "uyions",
+                "uyiez",
+                "uyaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "is",
+              "",
+              "issons",
+              "issez",
+              ""
+            ],
+            "participle" : {
+              "present" : "uyant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ],
+              "perfect" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ]
+            }
+          },
+          "enir" : {
+            "conditionnal" : [
+              "iendrais",
+              "iendrais",
+              "iendrait",
+              "iendrions",
+              "iendriez",
+              "iendraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "iendrai",
+                "iendras",
+                "iendra",
+                "iendrons",
+                "iendrez",
+                "iendront"
+              ],
+              "present" : [
+                "iens",
+                "iens",
+                "ient",
+                "enons",
+                "enez",
+                "iennent"
+              ],
+              "past_simple" : [
+                "ins",
+                "ins",
+                "int",
+                "înmes",
+                "întes",
+                "inrent"
+              ],
+              "perfect" : [
+                "enais",
+                "enais",
+                "enait",
+                "enions",
+                "eniez",
+                "enaient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "iens",
+              "",
+              "enons",
+              "enez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "i"
+            },
+            "subjonctive" : {
+              "present" : [
+                "ienne",
+                "iennes",
+                "ienne",
+                "enions",
+                "eniez",
+                "iennent"
+              ],
+              "perfect" : [
+                "insse",
+                "insses",
+                "înt",
+                "inssions",
+                "inssiez",
+                "inssent"
+              ]
+            }
+          },
+          "devoir" : {
+            "conditionnal" : [
+              "irais",
+              "irais",
+              "irait",
+              "irions",
+              "iriez",
+              "iraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "rai",
+                "ras",
+                "ra",
+                "rons",
+                "rez",
+                "ront"
+              ],
+              "present" : [
+                "ois",
+                "ois",
+                "oit",
+                "ons",
+                "ez",
+                "oivent"
+              ],
+              "past_simple" : [
+                "us",
+                "us",
+                "ût",
+                "ûmes",
+                "ûtes",
+                "urent"
+              ],
+              "perfect" : [
+                "ais",
+                "ais",
+                "ait",
+                "ions",
+                "iez",
+                "aient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "is",
+              "",
+              "issons",
+              "issez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "dû"
+            },
+            "subjonctive" : {
+              "present" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ],
+              "perfect" : [
+                "isse",
+                "isses",
+                "isse",
+                "issions",
+                "issiez",
+                "issent"
+              ]
+            }
+          },
+          "esir" : {
+            "current" : "infinitive",
+            "participle" : {
+              "present" : "ant",
+              "past" : "i"
+            },
+            "indicative" : {
+              "present" : [
+                "is",
+                "is",
+                "it",
+                "isons",
+                "isez",
+                "isent"
+              ],
+              "perfect" : [
+                "isais",
+                "isais",
+                "isait",
+                "isions",
+                "isiez",
+                "isent"
+              ],
+              "past_simple" : [
+                "is",
+                "is",
+                "it",
+                "imes",
+                "ites",
+                "irent"
+              ]
+            }
+          },
+          "aloir" : {
+            "conditionnal" : [
+              "audrais",
+              "audrais",
+              "audrait",
+              "audrions",
+              "audriez",
+              "audraient"
+            ],
+            "current" : "infinitive",
+            "indicative" : {
+              "future" : [
+                "audrai",
+                "audras",
+                "audra",
+                "audrons",
+                "audrez",
+                "audront"
+              ],
+              "present" : [
+                "aux",
+                "aux",
+                "aut",
+                "alons",
+                "alez",
+                "alent"
+              ],
+              "past_simple" : [
+                "us",
+                "us",
+                "ut",
+                "ûmes",
+                "ûtes",
+                "urent"
+              ],
+              "perfect" : [
+                "ais",
+                "ais",
+                "ait",
+                "ions",
+                "iez",
+                "aient"
+              ]
+            },
+            "imperative" : [
+              "",
+              "aux",
+              "",
+              "alons",
+              "alez",
+              ""
+            ],
+            "participle" : {
+              "present" : "ant",
+              "past" : "u"
+            },
+            "subjonctive" : {
+              "present" : [
+                "ale",
+                "ales",
+                "ale",
+                "alions",
+                "aliez",
+                "alent"
+              ],
+              "perfect" : [
+                "alusse",
+                "alusses",
+                "alût",
+                "alussions",
+                "alussiez",
+                "alussent"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "table_name" : "Verb"
+  }
+]
