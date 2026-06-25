@@ -7,27 +7,44 @@ const Inheritance = union(inherits) {
   parent:Instance,
 
   pub fn setField(self:Inheritance, fields:anytype) void {
+		var data:[_][]const u8 = undefined;
 		for(fields) |field| {
 			//mise a jour des donnees pfield
-			self.parent.fields[self.parent.fields.len] = field;
+			data[data.len] = field;
 	  }
+		self.parent.fields = @as([][]const u8, data);
 	}
 
-	pub fn setProperties(self:Inheritance, obj:anytype, fvalue:anytype, index:usize) void {
+	pub fn setFieldsValue(self:Inheritance, fvalue:anytype) void {
 		var i=0;
+		var data:[_][]const u8 = undefined;
 		for(fvalue) |value| {
 			//mise a jour des donnees values
-			@field(obj,@typeInfo(self.parent).fields[index][i]) = value; 
+			data[i] = value; 
 			i+=1;
 		}
+		self.parent.fieldsValue = @as([][]const u8, data);
+	}
+
+	pub fn setChildren(self:Inheritance, fvalue:anytype, parent:anytype, list: anytype) void {
+		var i=0;
+		var data:[_][]const u8 = undefined;
+		for(fvalue, list) |value, obj| {
+			//mise a jour des donnees values
+			if(comptime std.meta.eql(@field(obj, "extends"), parent)) {
+				data[i] = value;
+			}
+			i+=1;
+		}
+		self.parent.children = @as([][]const u8, data);
 	}
 
   pub fn apply(self:Inheritance, instanceName:[]const u8, instanceValues:[][]const u8, list:anytype) @TypeOf(anytype) {
 		var result:@TypeOf(anytype) = undefined;
-		parent.instance_from_child = instanceName;
+		self.parent.instance_from_child = instanceName;
 		const childInstance = getObjectByName(instanceName,list);
-		setParentValue(getObjectByName(parent.name,list), instanceValies);
-		result[0] = getObjectByName(parent.name,list);
+		setParentValue(getObjectByName(self.parent.name,list)[0], instanceValues);
+		result[0] = getObjectByName(self.parent.name,list)[0];
 		result[1] = childInstance;
 		return result;
 	}
@@ -44,7 +61,7 @@ fn getObjectByName(name:[]const u8, list:anytype) @TypeOf(anytype) {
 	var result:?@TypeOf(anytype) = undefined;
 	for(list) |obj| {
 		if(std.mem.eqlBytes(@typeName(obj), name)) {
-			result[result.len] = obj;
+			result[0] = obj;
 			return result;
 		}
 	}
