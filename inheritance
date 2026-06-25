@@ -1,0 +1,60 @@
+const std = @import("std");
+
+const inherits = {abstract, parent};
+
+const Inheritance = union(inherits) {
+	is_abstract:bool,
+  parent:Instance,
+
+  pub fn setField(self:Inheritance, fields:anytype) void {
+		for(fields) |field| {
+			//mise a jour des donnees pfield
+			self.parent.fields[self.parent.fields.len] = field;
+	  }
+	}
+
+	pub fn setProperties(self:Inheritance, obj:anytype, fvalue:anytype, index:usize) void {
+		var i=0;
+		for(fvalue) |value| {
+			//mise a jour des donnees values
+			@field(obj,@typeInfo(self.parent).fields[index][i]) = value; 
+			i+=1;
+		}
+	}
+
+  pub fn apply(self:Inheritance, instanceName:[]const u8, instanceValues:[][]const u8, list:anytype) @TypeOf(anytype) {
+		var result:@TypeOf(anytype) = undefined;
+		parent.instance_from_child = instanceName;
+		const childInstance = getObjectByName(instanceName,list);
+		setParentValue(getObjectByName(parent.name,list), instanceValies);
+		result[0] = getObjectByName(parent.name,list);
+		result[1] = childInstance;
+		return result;
+	}
+}
+
+fn setParentValue(parent:anytype, values:anytype) void {
+	for(@typeInfo(parent).fields, fvalue) |fparent, value| {
+		@field(parent, fparent) = value;
+	}
+}
+
+fn getObjectByName(name:[]const u8, list:anytype) @TypeOf(anytype) {
+
+	var result:?@TypeOf(anytype) = undefined;
+	for(list) |obj| {
+		if(std.mem.eqlBytes(@typeName(obj), name)) {
+			result[result.len] = obj;
+			return result;
+		}
+	}
+  return null;
+} 
+
+const Instance = union {
+  name:[]const u8,
+	fields:[][]const u8,
+  fieldsValue:[][]const u8,
+	children:[][]const u8,
+  instance_from_child:[]const u8,
+}
