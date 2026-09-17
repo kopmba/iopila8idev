@@ -1,0 +1,63 @@
+fn FileReader(comptime T: type) type {
+	return struct {
+		path: T,
+
+		pub fn lines() [][]const u8 {
+
+		}
+	};
+}
+
+pub fn replacer(path:[]const u8) void {
+		    const lines = FileReader(path).lines();
+		    for(lines) |line| {
+		        if(mem.indexOf(u8,line,"fn")!=-1) {
+		            const tokens = mem.tokenizerAny(u8,line," ");
+		            var val = "";
+		            while(tokens.next()) |v| {
+		                if(mem.eqlBytes("(",@as([]const u8, v[0]))) {
+		                    val = v;
+		                    const _tokens = mem   .tokenizerAny(u8,val,",");
+		                    while(_tokens.next()) |_v| {
+		                        mem.replace(u8,line,_v,helper.getKey(_v),&output);
+		                        line = @as([]const u8, &output);
+		                    }
+		                }
+		                mem.replace(u8,line,v,helper.getKey(v),&output);
+		                 line = @as([]const u8, &output)
+		            }
+		        } else if(mem.indexOf(u8,line,"for")!=-1) {
+		            const tokens = mem.tokenizerAny(u8,line," ");
+		            
+		            while(tokens.next()) |v| {
+		                if(v[0] == '|') {
+		                    val = v;
+		                    const _tokens = mem   .tokenizerAny(u8,val,",");
+		                    while(_tokens.next()) |_v| {
+		                        mem.replace(u8,line,_v,helper.getKey(_v),&output);
+		                        line = @as([]const u8, &output);
+		                    }
+		                } 
+		                
+		                if(v[0] == '(') {
+		                    val = v;
+		                    const _tokens = mem   .tokenizerAny(u8,val,",");
+		                    while(_tokens.next()) |_v| {
+		                        mem.replace(u8,line,_v,helper.getKey(_v),&output);
+		                        line = @as([]const u8, &output);
+		                    }
+		                }
+		                mem.replace(u8,line,_v,helper.getKey(v),&output);
+		                 line = @as([]const u8, &output);
+		            }
+		            
+		        } else {
+		            const tokens = mem.tokenizerAny(u8,line," ");
+		            
+		            while(tokens.next()) |v| {
+		                mem.replace(u8,line,v,helper.getKey(v),&output);
+		                 line = @as([]const u8, &output);
+		            }
+		        }
+		    }
+		}
