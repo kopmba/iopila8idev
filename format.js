@@ -99,3 +99,12 @@ function formatAll(lines) {
 function concatStr(arr1,insert,arr2) {
   return arr1.concat([insert]).concat(arr2);
 }
+
+const arrFn = ["function myMethod(c) {","  const x = 2*c;","  const y = sum(x,1);","","  if(y > x) {","    for(let i=0; i < c; i++) {","      while(x > c) {","        if(c<5) {","          c = c + 2;","        } else if(c==5) {","          c = c - 1;","        } else {","          c = c + 4;","        }","      }","      switch(y) {","          case 7:","             y = y - 4;","          default:","             y = 8;","      }","      console.log(i + \" -> c:\" + c + \",x:\" + x + \",y:\" + y);","    }","  }","}"];
+
+var _arrFn = arrFn;
+
+console.log(_arrFn);
+const strs = asString(_arrFn);
+const fmt = formatAll(_arrFn);
+console.log(fmt);
