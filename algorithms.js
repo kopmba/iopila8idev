@@ -78,6 +78,168 @@ var HashMap = {
 	
 }
 
+//Removes duplicates int from linked list
+var Iterator = {
+	items : [],
+	pos: 0,
+
+	next : function() {
+		this.pos = this.pos + 1;
+		return this.items[this.pos];
+	},
+
+	hasNext : function() {
+		return this.pos < this.items.length - 1;
+	},
+
+	getPos : function() {
+		return this.pos;
+	},
+  
+  setPos : function(pos) {
+    this.pos = pos;
+  },
+  
+  getItems : function() {
+    return this.items;
+  },
+
+	setItems : function(arr) {
+		this.items = arr;
+	}
+};
+
+var LinkedList = {
+	items : [],
+	iterator : Iterator,
+  
+  print: function() {
+    console.log("Print ->");
+    console.log(this.items)
+  },
+
+	add : function(v) {
+		this.items.push(v);
+	},
+
+	get : function(index) {
+		var i=0;
+    var result = null
+    const data = this.items;
+		data.forEach(function(item) {
+			if(i === index) {
+				result = item;
+			}
+			i++;
+		});
+    return result
+	},
+
+	contains : function(v) {
+    var cond = false;
+		this.items.forEach(function(item) {
+			if(item === v) {
+				cond = true;
+			}
+		});
+		return cond;
+	},
+
+	indexOf : function(v) {
+		var i = 0;
+    var index = -1
+		this.items.forEach(function(item) {
+			if(item === v) {
+				index = i;
+			}
+			i++;
+		});
+		return index
+	},
+  
+  setItems : function(items) {
+    this.items = items;
+  },
+
+	removeAt : function(index) {
+		var result = [];
+		var i=0;
+		this.items.forEach(function(item) {
+			if(i != index) {
+				result.push(item)
+			}
+			i++;
+		});
+		this.items = result;
+    console.log(this.items)
+	},
+
+	getIterator : function() {
+		this.iterator.items = this.items;
+		return this.iterator;
+	},
+
+	removeDuplicates : function(list,isStart,start) {
+		var iterator = list.getIterator();
+		var previous = -1;
+		var count = 0;
+    var data = list.items;
+    iterator.setItems(data)
+		while(start < list.items.length-1 && iterator.hasNext()) {
+			const item = iterator.next();
+      if(count === 0) {
+    		  previous = iterator.getItems()[0];
+				count = count + 1;
+        if(isStart) {
+    				start = start + 1;
+        }
+			} else {
+        if(previous === item) {
+          isStart = false;
+      		  list.removeAt(iterator.getPos());
+          data = list.items;
+        		const k = data[start];
+        		data[start] = data[0];
+        		data[0] = k;
+        		iterator.setItems(data);
+        		start = start + 1;
+        		count = 0;
+          iterator.setPos(0);
+          list.removeDuplicates(list,isStart,start);
+        }
+        
+    		} 
+    }
+    
+    if(start < list.items.length-1) {
+      console.log("start->"+start)
+      console.log("len->"+list.items.length-1)
+      const k = list.items[start];
+      list.items[start] = list.items[0];
+      list.items[0] = k;
+      start = start + 1;
+      count = 0;
+      iterator.setPos(0);
+      list.removeDuplicates(list,isStart,start);
+    }
+    
+    console.log("Output ->");
+    console.log(list.items);
+    
+  }
+  
+}
+
+var linked = LinkedList;
+linked.items = [1,2,4,2,3,5,1,3,6]
+console.log(linked.print())
+console.log(linked.contains(5))
+console.log(linked.get(6))
+console.log(linked.indexOf(6))
+console.log(linked.removeAt(8))
+console.log(linked.getIterator().getItems()[0])
+linked.removeDuplicates(linked,true,0)
+
 //BufferReader
 function Reader(path,content) {
   this.path = path;
