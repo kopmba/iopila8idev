@@ -240,6 +240,56 @@ console.log(linked.removeAt(8))
 console.log(linked.getIterator().getItems()[0])
 linked.removeDuplicates(linked,true,0)
 
+//Kth elements in from a linked list
+const _arr = [1,3,4,2,1,5,8,2,3,4,1,8,5,1]
+var list = LinkedList;
+list.items = _arr
+console.log(findFromLinkedList(list,[],[],0))
+
+function findFromLinkedList(list,input,counter,start) {
+  
+  var iterator = list.getIterator();
+  var count = 0;
+  const first = iterator.getItems()[0];
+  
+  if(!exists(input,first) || input.length === 0) {
+		input.push(first);
+    while(iterator.hasNext()) {
+      const element = iterator.next();
+      if(first === element) {
+        count++;
+      }
+    }
+    counter.push(count);
+    start = start + 1;
+    list.items[0] = list.items[start];
+    list.items[start] = first;
+    iterator.setPos(0);
+    if(start <= list.items.length-1) {
+      console.log("Inside not exist");
+      console.log(list.items);
+	  console.log("input->");
+      console.log(input);
+      console.log("counter->");
+      console.log(counter);
+      console.log("start->"+start);
+      findFromLinkedList(list,input,counter,start);
+    }
+
+  } 
+  
+  var result = {};
+
+	for(let i=0; i<input.length; i++) {
+		const index = ''+input[i];
+		result[index] = counter[i];
+	}
+  
+  console.log(result);
+
+  return result;
+}
+
 //BufferReader
 function Reader(path,content) {
   this.path = path;
