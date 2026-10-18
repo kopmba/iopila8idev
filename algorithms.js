@@ -290,6 +290,129 @@ function findFromLinkedList(list,input,counter,start) {
   return result;
 }
 
+//Sort array using Iterator
+
+//Anagram
+function concat(c,arr) {
+	const result = []
+	arr.forEach(function(str) {
+		const val = c + str;
+		result.push(val);
+	});
+	return result;
+}
+
+const dictionary = [
+	"chien", "chine"
+]
+
+//This method is a method of test which could need other method 
+function anagram(str) {
+	const values = permutation(str).flat(Infinity);
+	console.log(values);
+	var count = 0;
+	dictionary.forEach(function(data) {
+		values.forEach(function(value) {
+			if(value === data) {
+				count++;
+			}
+		});
+	});
+
+	if(count === dictionary.length) {
+		console.log("Computation sucessfully completed anagram");
+	}
+}
+
+function permutation(str) {
+	var result = []
+	const len = str.length;
+  
+  if(str.length === 1) {
+    result.push(str);
+  }
+  
+	if(str.length === 2) {
+		result.push(str,str[1]+str[0])
+	}
+  
+  if(str.length > 2) {
+    console.log(str.length>2)
+		for(let i=0; i<str.length; i++) {
+			var data = str;
+			if(i===0) {
+				const c = str[0];
+        console.log("c->"+c)
+				const slice = data.slice(1,len);
+        console.log("slice->")
+        console.log(slice)
+				const val = concat(c,permutation(slice));
+      		console.log("val->"+val)
+      		result.push(val);
+        console.log("push at "+i+"->")
+        console.log(result)
+			} else {
+          //javascript issue which dont set the value of str because abc after permutation is always abc instead of bac
+    				/*const c = data[0];
+			    data[0] = data[i]
+		      data[i] = c;
+          console.log("new str->"+data)*/
+          //create method permutString to permut char by index abc become bac at index 1
+          console.log("data->"+data)
+          var newStr = permutString(data, i)
+          const c = newStr[0];
+          console.log("new str->"+newStr)
+          const slice = newStr.slice(1,len);
+          console.log("slice->")
+          console.log(slice)
+          const val = concat(c,permutation(slice));
+          console.log("val->"+val)
+    				result.push(val);
+          console.log("push at "+i+"->")
+          console.log(result)
+			}
+		}
+	}
+	return result;
+}
+
+function permutString(str,index) {
+  var result = ""
+  var data = [];
+  const c = str[0]
+
+  var _str = toArray(str);
+  data[0] = str[index];
+ 
+  _str.splice(index,index)
+  toConcat(data, _str)
+
+  for(let i=0; i<data.length; i++) {
+    
+    result = result + data[i]
+  }
+  
+  return result;
+  
+}
+
+function toConcat(arr1,arr2) {
+  arr2.forEach(function(v) {
+    arr1.push(v)
+  })
+}
+
+function toArray(str) {
+  const result = [];
+  for(let i=0; i<str.length; i++) {
+    result.push(str.charAt(i))
+  }
+  return result
+}
+
+console.log(permutation("a"))
+console.log(permutation("cab"))
+
 //BufferReader
 function Reader(path,content) {
   this.path = path;
